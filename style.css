@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body {
+    user-select: none;
+    outline: none;
+    /* overflow-x: hidden; */
+    width: 100vw;
+    font-family: 'Amiri', serif;
+    background-color: var(--white);
+    color: var(--brown);
+}
+
+:root {
+    --red: #DA2C38;
+    --blue: #4f98ca;
+    --white: #F4F0BB;
+    --green: #226F54;
+    --light-green: #87C38F;
+    --brown:#43291F;
+}  
+
