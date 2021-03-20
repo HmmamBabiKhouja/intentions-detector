@@ -1,0 +1,41 @@
+@media only screen and (min-width:768px) {
+
+
+    .container{
+        max-width: 768px;
+    }
+
+    .main-div{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 96%;
+        transform: translateY(-15%);
+    }    
+    
+    .main-menu{
+        flex-direction: row;
+        margin-right:0;
+        transform: translateY(25%);
+        order: 0;
+    }
+
+ 
+}
+
+@media only screen and (min-width:1024px) {
+
+    .container{
+        max-width: 1024px;
+    }
+
+    .main-menu{
+        width: 32%;
+        order: 1;
+        transform: translateY(25%);
+    }
+
+    .menu-choice{
+        width: 90%;
+    }
+ 
+}

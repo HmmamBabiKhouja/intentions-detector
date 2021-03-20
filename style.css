@@ -1,3 +1,8 @@
+/********************
+REUSABLE & COMMON-CODE
+********************/
+/* TODO: raise the main box a little up */
+
 * {
     margin: 0;
     padding: 0;
@@ -27,3 +32,146 @@ body {
     --brown:#43291F;
 }  
 
+.container{
+    width: 96%;
+    margin: 0 auto;
+}
+
+
+/********************
+******* HOME *********
+********************/
+
+/*** NAV ***/
+
+nav{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: auto;
+    list-style-type: none;
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-list>li{
+    margin-left:0.8rem ;
+    margin-right: auto;
+    text-align: center;
+}
+
+.alter-language{
+    font-family: 'Roboto', sans-serif;
+    color: var(--green);
+    text-shadow: 0 3px var(--light-green);
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    /* to remove the blue ugly shade when pressing the button */
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+}
+
+/****** CENTER ******/
+
+h1{
+    width: 100%;
+    text-align: center;
+    font-size: 2.7rem;
+}
+
+main{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.center-container{
+    height: 70vh;
+}
+
+.center-div{
+    width: 100%;
+    height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateY(-5%);/* this might be edited or removed if I added nav tag */
+}
+
+.main-menu{
+    width: 90%;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    gap: 15px;
+    list-style-type: none;
+    margin: 0 auto;
+    order: 1;
+}
+
+.menu-choice{
+    position: relative;
+    margin: 3px 3px;
+    text-align: center;
+    font-size: 1.4rem;
+    padding:5px 16px;
+    border-radius: 18px;
+    cursor: pointer;
+    /* to remove the blue ugly shade when pressing the button */
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.menu-choice:link,
+.menu-choice:visited{
+    display: block;
+}
+
+.resource{
+    color: var(--white);
+    background-color: var(--green);
+
+}
+
+.resource:hover{
+    color: var(--green);
+    border: 1px solid var(--green);
+    background-color: transparent;
+}
+
+.start{
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.start:hover{
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    background-color: transparent;
+}
+
+
+.intro{
+
+}
+
+.intro-text{
+    color: var(--brown);
+}
+
+/* .home{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("resouces/robert-garcia-DmTrCKj_0as-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+} */
