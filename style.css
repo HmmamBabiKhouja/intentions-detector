@@ -1,7 +1,6 @@
 /********************
 REUSABLE & COMMON-CODE
 ********************/
-/* TODO: raise the main box a little up */
 
 * {
     margin: 0;
@@ -21,20 +20,26 @@ body {
     font-family: 'Amiri', serif;
     background-color: var(--white);
     color: var(--brown);
+    text-align: center;
+    margin: 0 auto;
 }
 
 :root {
     --red: #DA2C38;
-    --blue: #4f98ca;
-    --white: #F4F0BB;
+    /* --blue: #4f98ca; */
+    --white: #f9f6d8;
     --green: #226F54;
     --light-green: #87C38F;
+    --dark-green: #1a5540;
     --brown:#43291F;
 }  
 
 .container{
-    width: 96%;
+    width: 94%;
+    max-width: 320px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -45,31 +50,28 @@ body {
 /*** NAV ***/
 
 nav{
-    height: 10vh;
+    height: 6vh;
     width: 100%;
     display: flex;
 }
 
 .nav-list {
     display: flex;
-    margin-right: auto;
+    margin:0.5rem auto 0 0;
     list-style-type: none;
-    margin-top: 0.5rem;
-    width: 100%;
+    width: 19%;
     height: 100%;
 }
 
 .nav-list>li{
-    margin-left:0.8rem ;
-    margin-right: auto;
-    text-align: center;
+    margin-left: 0.7rem;
 }
 
 .alter-language{
     font-family: 'Roboto', sans-serif;
     color: var(--green);
     text-shadow: 0 3px var(--light-green);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
     cursor: pointer;
     /* to remove the blue ugly shade when pressing the button */
@@ -77,22 +79,35 @@ nav{
     text-decoration: none;
 }
 
+.share-link{
+    max-width: 28px;
+    transform: translateY(5px);
+}
+
+.share-link>img{
+    width: 100%;
+}
+
+
 /****** CENTER ******/
 
 h1{
     width: 100%;
     text-align: center;
-    font-size: 2.7rem;
+    font-size: 3.2rem;
 }
 
 main{
-    height: 90vh;
+    height: 94vh;
     display: flex;
     align-items: center;
+    margin: 0 auto;
+    transform:translateY(-10px);
 }
 
 .center-container{
-    height: 70vh;
+    /* height: 70vh; */
+    text-align: center;
 }
 
 .center-div{
@@ -103,7 +118,7 @@ main{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    transform: translateY(-5%);/* this might be edited or removed if I added nav tag */
+    transform:translateY(-20px)
 }
 
 .main-menu{
@@ -115,6 +130,7 @@ main{
     list-style-type: none;
     margin: 0 auto;
     order: 1;
+    transform:translateY(-10px);
 }
 
 .menu-choice{
@@ -137,41 +153,30 @@ main{
     display: block;
 }
 
-.resource{
-    color: var(--white);
-    background-color: var(--green);
-
-}
-
-.resource:hover{
-    color: var(--green);
-    border: 1px solid var(--green);
-    background-color: transparent;
-}
-
 .start{
     color: var(--white);
-    background-color: var(--blue);
+    background-color: var(--green);
 }
 
-.start:hover{
-    color: var(--blue);
-    border: 1px solid var(--blue);
-    background-color: transparent;
+.resource{
+    color: var(--green);
+    border: 1px solid var(--green);
+    background-color: var(--white);
 }
 
+.start:hover,
+.resource:hover{
+    color: var(--white);
+    background-color: var(--dark-green);
+    border: 1px solid var(--dark-green);
+}
 
 .intro{
-
+    font-size:1rem;
+    margin:1.3rem auto;
+    transform:translateY(-10px);
 }
 
 .intro-text{
-    color: var(--brown);
+    text-align: right;
 }
-
-/* .home{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("resouces/robert-garcia-DmTrCKj_0as-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed
-} */
