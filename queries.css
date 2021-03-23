@@ -1,11 +1,13 @@
 @media only screen and (min-width:768px) {
 
-
+    html{
+        font-size: 20px;
+    }
     .container{
         max-width: 768px;
     }
 
-    .main-div{
+    /* .main-div{
         flex-direction: column;
         justify-content: space-between;
         width: 96%;
@@ -16,8 +18,7 @@
         flex-direction: row;
         margin-right:0;
         transform: translateY(25%);
-        order: 0;
-    }
+    } */
 
  
 }
