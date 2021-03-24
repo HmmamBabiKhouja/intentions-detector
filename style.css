@@ -1,6 +1,10 @@
 /********************
 REUSABLE & COMMON-CODE
 ********************/
+/* TODO:
+1reduce the curve of choice radius 
+2remove center container */
+
 * {
     margin: 0;
     padding: 0;
@@ -132,7 +136,7 @@ main{
     /* to remove the blue ugly shade when pressing the button */
     -webkit-tap-highlight-color: transparent;
     text-decoration: none;
-    transition: 0.5s;
+    transition: 0.7s;
     width: 100%;
 }
 
