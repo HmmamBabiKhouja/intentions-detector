@@ -115,6 +115,7 @@ main{
     transform:translateY(-20px)
 }
 
+/* TODO: decide how the buttons design will be ! */
 .main-menu{
     width: 90%;
     display: flex;
@@ -138,6 +139,7 @@ main{
     text-decoration: none;
     transition: 0.7s;
     width: 100%;
+    box-shadow: 0px 4px var(--dark-green)
 }
 
 .menu-choice:link,
