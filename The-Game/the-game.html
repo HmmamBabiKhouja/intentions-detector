@@ -1,51 +1,41 @@
-
 <!DOCTYPE html>
 <html lang='ar' dir="rtl">
 
-    <head>
-        <meta charset='UTF-8'>
-        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <link rel='stylesheet' href='the-game-style.css'>
-        <link rel='stylesheet' href='the.game-queries.css'>
-        <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
-        <title>تحليل الخاطر</title>
-    </head>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='the-game-style.css' crossorigin="anonymous">
+    <!-- <link rel='stylesheet' href='the-game-queries.css'> -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <title>تحليل الخاطر</title>
+</head>
 
-    <body>
-        <nav>
-            <div class="nav-item ">
-                <a href="">
-                    <img class="nav-function" src="../resouces/redo.svg" alt="redo test">
-                </a>
+<body>
+    <nav>
+        <div class="nav-item ">
+            <a href="">
+                <img class="nav-function" id="redo" src="../resouces/redo.svg" alt="redo test">
+            </a>
+        </div>
+        <div class="nav-item ">
+            <a href="">
+                <img class="nav-function" id="backward" src="../resouces/back-arrow.svg" alt="back-arrow">
+            </a>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="text-side">
+            <div class="text-div">
+                <span class="text" id="text"></span>
             </div>
-            <div class="nav-item ">
-                <a href="">
-                    <img class="nav-function" src="../resouces/back-arrow.svg" alt="back-arrow">
-                </a>
+            <div class="choices" id="choices">
+                <div class="choice" id="answer-true">صحيح</div>
+                <div class="choice" id="answer-false">خطأ</div>
             </div>
-        </nav>
-        <main class="container">
-            <div class="center-container">
-                <div class="steps-side">
-                    <ul class="steps-list">
-                        <li class="step-clicked">1</li>
-                        <li class="step-current">2</li>
-                        <li class="step">3</li>
-                        <li class="step">4</li>
-                        <li class="step">5</li>
-                    </ul>
-                </div>
-                <div class="questions-side">
-                    <div class="question-div">
-                        <span class="question">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus vel voluptatem expedita non doloribus esse commodi quidem numquam, dolorum nisi, dicta odio laborum! Aut nihil consequuntur impedit necessitatibus dolore sit!</span>
-                    </div>
-                    <div class="choices">
-                        <div class="choice">true</div>
-                        <div class="choice">false</div>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </body>
+        </div>
+    </main>
+    <script src="the-game-code.js"></script>
+</body>
+
 </html>
